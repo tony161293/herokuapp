@@ -1,1 +1,1 @@
-web: gunicorn canteen.wsgi
+web:gunicorn canteen.wsgi
