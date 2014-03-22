@@ -1,0 +1,21 @@
+<html>
+<body>
+<div id="content">
+<h2 style="color:blue;">
+<u>
+Items today
+</u>
+</h2>
+<p>
+</p>
+<h3 style="color:red;">Dated: {{date}}</h3>
+{% for order_detail in order_details %}
+{% if order_details.order_date == dated %}
+<p>{{order_detail.useradno}}:{{order_detail.itemname}}:{{order_detail.count}}</p>
+{%endif%}
+{%endfor%}
+</div>
+<p style="margin-top:20px;"><a href="/admin_page">Return to admin page</a></p>
+<p style="margin-top:3px;"><a href="/logout">Logout to go to homepage</a></p>
+</body>
+</html>

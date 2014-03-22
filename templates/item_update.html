@@ -1,0 +1,15 @@
+<html>
+<body>
+{{item_update_form.errors}}
+<h2>Enter the item details</h2>
+<form action="" method="POST">
+<p style="margin-top:3px;">Item Name:{{item_update_form.itemName}}</p>
+<p style="margin-top:3px;">Number of pieces:{{item_update_form.number}}</p>
+<p style="margin-top:3px;">Item cost:{{item_update_form.cost}}</p>
+<input type="submit" value="Submit details"/>
+</form>
+<p style="margin-top:3px;"><a href="/logout">Logout to go to homepage</a></p>
+<p style="margin-top:3px;"><a href="/admin_page">Return to admin page</a></p>
+
+</body>
+</html>

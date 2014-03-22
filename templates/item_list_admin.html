@@ -1,0 +1,12 @@
+<html>
+<body>
+<h2>Select an item to edit the number available</h2>
+{% for items in item %}
+<a href="/admin_page/edit_item/{{items.itemName}}/">
+<p>{{items.itemName}} : {{items.number}} ,:{{items.pub_date}}</p>
+</a>
+{%endfor%}
+<p style="margin-top:70px;"><a href="/admin_page">Return to admin page</a></p>
+<p style="margin-top:3px;"><a href="/logout">Logout to go to homepage</a></p>
+</body>
+</html>

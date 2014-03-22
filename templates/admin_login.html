@@ -1,0 +1,17 @@
+<html>
+<body>
+
+<u><p style="color:red;margin-left:40%;font-size:30px;padding-top:70px;">Admnistrator login</p></u>
+<div style="background-color:white;margin-left:530px;padding-top:120px;">
+<form action="/admin_auth/" method="POST">
+{% csrf_token %}
+<p><label for="username">Username</label>
+<input type="text" name="username" value="" id="username"></p>
+<p><label for="password">Password</label>
+<input type="password" name="password" value="" id="password"></p>
+<input type="submit" value="Click here to login" style="margin-left:69px;"/>
+</form>
+</div>
+
+</body>
+</html>

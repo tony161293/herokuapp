@@ -1,0 +1,17 @@
+<html>
+<body>
+{% if form.errors %}
+<p>Sorry invalid username or password</p>
+{% endif %}
+<h2>Enter username and password to login</h2>
+<form action="/auth/" method="POST">
+{% csrf_token %}
+<p><label for="username">Username</label>
+<input type="text" name="username" value="" id="username"></p>
+<p><label for="password">Password</label>
+<input type="password" name="password" value="" id="password"></p>
+<input type="submit" value="Click here to login"/>
+</form>
+<p style="margin-top:20px;"><a href="/">Return to homepage</a></p>
+</body>
+</html>
